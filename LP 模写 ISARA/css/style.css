@@ -1,0 +1,343 @@
+html body{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    background-size: contain;
+    background-repeat: no-repeat; 
+    letter-spacing: 0.1rem;
+    font-family: serif;
+}
+
+*{
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* header-top */
+.header-top{
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    display: flex;
+    padding: 1rem;
+    justify-content: flex-end;
+    background-color: white;
+    z-index: 10;
+}
+
+.title{
+    width: 10rem;
+    height: 4rem;
+    background-image: url(/image/isaralogo.png);
+    background-size: contain;
+}
+
+.title-text{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.header-top a{
+    margin-left: auto;
+    margin-right: 2rem;
+}
+
+.contact{
+    background-color: #da6b64;
+    border-radius: 100px;
+    cursor: pointer;
+    padding:  0.25rem 0.5rem;
+}
+
+
+
+a:link{color: white;}
+a:visited{color: white;}
+a:hover{color: blue;}
+a:active{color: white;}
+
+/* モバイル版  header-top
+ ーーーーーーーーーーーーーーーーーーーーーーーー*/
+
+ @media (max-width: 600px){
+
+    *{
+       font-size: 1rem;
+    }
+
+    .header-top{
+        justify-content: center;
+        height: 60px;
+        padding: 0;
+    }
+
+    .header-top a{
+        margin: 10px auto;
+    }
+
+    .title-text{
+        display: none;
+    }
+
+    .contact p{
+        font-size: 0.5rem;
+    }
+ }
+
+/*header-in */
+
+.header-in{
+    width: 100%;
+    padding-top: 10vh;
+    padding-bottom: 3rem;
+    background-image: url(/image/main.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.header-in h1  {
+    text-align: center;
+}
+
+.header-in h3 {
+    text-align: center;
+}
+
+.logo{
+    height: 100px;
+    background-image: url(/image/isaralogolarge.png);
+    background-size: contain;
+    background-position: center;
+}
+
+.fadein{
+    display: none;
+    padding-top: 10vh;
+    margin: auto;
+}
+
+.lp-origin{
+    color: red;
+}
+
+.origin{
+    display: inline-block;
+    background-color:  #da6b64;;
+    padding: 0 1rem;
+    border-radius: 100px;
+}
+
+/* モバイル版  header-in
+ ーーーーーーーーーーーーーーーーーーーーーーーー*/
+
+ @media (max-width: 600px){
+    
+    .header-in{
+        background-size: 100% 100%;
+    }
+
+    .logo{
+        height: 70px;
+        background-size: contain;
+    }
+
+    .fadein{
+        padding-top: 0;
+    }
+
+
+
+ 
+ }
+
+
+/* share */
+.share{
+    background-color: orange;
+    padding-bottom: 40px;
+}
+
+.share h2{
+    margin: 0;
+    padding: 30px 0; 
+}
+
+.cat{
+    display: inline-block;
+    background-color: white;
+    color: red;
+    padding: 0 1rem;
+    border-radius: 15px;
+}
+
+.snss{
+    display: flex;
+    justify-content: space-around;
+}
+
+.sns a{
+    display: flex;
+}
+
+.sns img{
+    width: 3rem;
+    height: 3rem;
+}
+
+.sns p{
+    margin-left: 0.5rem;
+    margin: auto 0 auto 1rem;
+    font-size: 2rem;
+}
+
+
+.contact-big{
+    background-color: #da6b64;
+    font-size: 30px;
+    padding: 30px;
+    margin: 60px 40px;
+    border-radius: 50px;
+}
+
+
+/* モバイル版  share
+ ーーーーーーーーーーーーーーーーーーーーーーーー*/
+ @media (max-width: 600px){
+ .cat h2{
+     font-size: 0.7rem;
+ }
+
+ .contact-big{
+     font-size: 1rem;
+     margin: 30px 20px;
+ }
+
+ .snss{
+     display: block;
+ }
+
+ .sns{
+     display: inline-block;
+     margin: auto;
+ }
+
+ .sns p{
+    font-size: 1rem;
+}
+
+ }
+
+
+/* about */
+
+.about{
+    background-color: #fef5e0;
+    padding-bottom: 60px;
+}
+
+.about p{
+    font-weight: bold;
+} 
+
+.icon{
+   position: relative;
+   top: -40px;
+}
+
+.icon p{
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    color: white;
+    background-color: aqua;
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 50%;
+    margin: 0;
+}
+
+.aboutbox{
+    width: 90%;
+    border: 2px solid orange;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.aboutbox p{
+    font-weight: 1000;
+}
+
+.box{
+    display: inline-block;
+    padding: 10px;
+}
+
+ /* モバイル版  about
+ ーーーーーーーーーーーーーーーーーーーーーーーー*/
+
+ @media (max-width: 600px){
+
+    .about{ padding-bottom: 10px;
+    }
+ }
+
+/* classlist */
+
+.classlist{
+    background-image: url(/image/classbg.jpg);
+    background-size: cover;
+    color: white;
+    padding: 60px 0;
+}
+
+.classlist h1 {
+    margin-top: 0;
+    padding-top: 20px;
+}
+
+.classes{
+    padding: 0 ;
+}
+
+.class{
+    width: 40%;
+    display: inline-block;
+    list-style: none;
+    border: 2px solid #016ea9;
+    padding: 0;
+    background-color: white;
+    color: #000;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.class p{
+    background-color: #016ea9;
+    margin: 0 auto;
+}
+ .class li{
+     border-bottom: 1px dotted black;
+ }
+
+ /* モバイル版  class-list
+ ーーーーーーーーーーーーーーーーーーーーーーーー*/
+
+ @media (max-width: 600px){
+    
+    .classlist{
+        padding: 0 0 2rem;
+    }
+
+    .class{
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .class1{
+        margin-bottom: 1rem;
+    }
+ }
